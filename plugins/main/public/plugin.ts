@@ -64,8 +64,8 @@ export class WazuhPlugin implements Plugin<WazuhSetup, WazuhStart, WazuhSetupPlu
 
     if (!response.isWazuhDisabled) {
       core.application.register({
-        id: `wazuh`,
-        title: 'Wazuh',
+        id: `invinsense`,
+        title: 'Invinsense',
         icon: core.http.basePath.prepend(
           logosInitialState?.logos?.[SIDEBAR_LOGO] ?
             getAssetURL(logosInitialState?.logos?.[SIDEBAR_LOGO]) :
@@ -102,8 +102,8 @@ export class WazuhPlugin implements Plugin<WazuhSetup, WazuhStart, WazuhSetupPlu
               return {
                 status: response.isWazuhDisabled,
                 category: {
-                  id: 'wazuh',
-                  label: 'Wazuh',
+                  id: 'invinsense',
+                  label: 'Invinsense',
                   order: 0,
                   euiIconType: core.http.basePath.prepend(logosInitialState?.logos?.[SIDEBAR_LOGO] ? getAssetURL(logosInitialState?.logos?.[SIDEBAR_LOGO]) : getThemeAssetURL('icon.svg', UI_THEME)),
                 }
