@@ -1,5 +1,5 @@
 {
-  "id": "wazuh",
+  "id": "invinsense",
   "version": "4.7.0-04",
   "opensearchDashboardsVersion": "opensearchDashboards",
   "configPath": [
