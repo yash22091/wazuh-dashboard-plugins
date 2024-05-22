@@ -118,8 +118,8 @@ export class WazuhPlugin implements Plugin<WazuhSetup, WazuhStart, WazuhSetupPlu
           }
         },
         category: {
-          id: 'wazuh',
-          label: 'Wazuh',
+          id: 'invinsense',
+          label: 'Invinsense',
           order: 0,
           euiIconType: core.http.basePath.prepend(logosInitialState?.logos?.[SIDEBAR_LOGO] ? getAssetURL(logosInitialState?.logos?.[SIDEBAR_LOGO]) : getThemeAssetURL('icon.svg', UI_THEME)),
         },
