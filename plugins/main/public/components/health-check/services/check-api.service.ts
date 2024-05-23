@@ -109,7 +109,7 @@ export const checkApiService =
         );
         getToasts().add({
           color: 'warning',
-          title: 'Selected Wazuh API has been updated',
+          title: 'Selected Invinsense API has been updated',
           text: '',
           toastLifeTimeMs: 3000,
         });
@@ -121,10 +121,10 @@ export const checkApiService =
         checkLogger.info(`Set cluster info in cookie`);
       }
       if (data === 3099) {
-        checkLogger.error('Wazuh not ready yet');
+        checkLogger.error('Invinsense not ready yet');
       } else if (data.data.error || data.data.data.apiIsDown) {
         const errorMessage = data.data.data.apiIsDown
-          ? 'Wazuh API is down'
+          ? 'Invinsense API is down'
           : `Error connecting to the API: ${
               data.data.error && data.data.error.message
                 ? ` ${data.data.error.message}`
