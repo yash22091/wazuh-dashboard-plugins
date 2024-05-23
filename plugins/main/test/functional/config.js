@@ -25,7 +25,7 @@ export default async function({ readConfigFile }) {
     apps: {
       ...kibanaConfig.get('apps'),
       wazuh: {
-        pathname: '/app/wazuh'
+        pathname: '/app/invinsense'
       }
     },
 
