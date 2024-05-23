@@ -227,7 +227,7 @@ function HealthCheckComponent() {
           <EuiFlexGroup justifyContent='center'>
             {thereAreErrors && (
               <EuiFlexItem grow={false}>
-                <EuiButton fill href={getHttp().basePath.prepend('/app/wazuh#/settings')}>
+                <EuiButton fill href={getHttp().basePath.prepend('/app/invinsense#/settings')}>
                   Go to Settings
                 </EuiButton>
               </EuiFlexItem>
