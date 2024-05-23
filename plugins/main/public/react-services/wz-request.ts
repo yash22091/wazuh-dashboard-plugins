@@ -76,7 +76,7 @@ export class WzRequest {
             const wzMisc = new WzMisc();
             wzMisc.setApiIsDown(true);
             if (!window.location.hash.includes('#/settings')) {
-              window.location.href = getHttp().basePath.prepend('/app/wazuh#/health-check');
+              window.location.href = getHttp().basePath.prepend('/app/invinsense#/health-check');
             }
             throw new Error(error);
           }
