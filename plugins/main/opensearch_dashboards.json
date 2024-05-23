@@ -3,7 +3,7 @@
   "version": "4.7.0-04",
   "opensearchDashboardsVersion": "opensearchDashboards",
   "configPath": [
-    "wazuh"
+    "invinsense"
   ],
   "requiredPlugins": [
     "navigation",
