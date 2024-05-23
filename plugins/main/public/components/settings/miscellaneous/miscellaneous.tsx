@@ -31,7 +31,7 @@ import { getHttp } from '../../../kibana-services';
 export const SettingsMiscellaneous = () => {
 
   const redirectHealthCheckDebugMode = useCallback(() => {
-    window.location.href = getHttp().basePath.prepend('/app/wazuh#/health-check?debug');
+    window.location.href = getHttp().basePath.prepend('/app/invinsense#/health-check?debug');
   }, []);
 
   return (
