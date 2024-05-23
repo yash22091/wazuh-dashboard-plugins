@@ -106,7 +106,7 @@ export class GenericRequest {
             !window.location.hash.includes('#/blank-screen')
           ) {
             window.location.href = getHttp().basePath.prepend(
-              '/app/wazuh#/health-check',
+              '/app/invinsense#/health-check',
             );
           }
         }
